@@ -1,3 +1,5 @@
+@use "../settings" as *;
+
 .logo {
   @include verticalCenter;
   margin: 5px auto;
