@@ -5,6 +5,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Blog from "./pages/blog";
 
 // en faisant RSC dans un fichier react , on obtient le code suivant: ainsi que l'import de React
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         {/* si URL n'est pas trouvé, on redirige vers la page d'accueil */}
         <Route path="*" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

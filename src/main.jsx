@@ -1,3 +1,5 @@
+// le main.jsx est le fichier qui va permettre de faire le rendu de l'application dans le DOM.
+
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
