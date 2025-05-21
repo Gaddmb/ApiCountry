@@ -19,6 +19,7 @@ const Countries = () => {
       .get("https://restcountries.com/v3.1/all")
       .then((res) => {
         setData(res.data);
+        console.log(res.data);
       })
       .catch((error) => console.log(error));
   }, []);

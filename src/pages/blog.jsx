@@ -13,7 +13,7 @@ const Blog = () => {
   const getData = () => {
     // j'indique quelle url je veux appeler
     axios
-      .get("http://localhost:5000/articles")
+      .get("http://localhost:3004/articles")
       // si la requete est un succes alors je stocke les données dans mon state
       .then((res) => setBlog(res.data));
   };
@@ -31,7 +31,7 @@ const Blog = () => {
       // j'envoie les données de mon formulaire au serveur
       // je lui envoie un objet avec les données de mon formulaire (author,content,date)
       // je lui envoie un objet avec les données de mon formulaire (author,content,date) et je lui indique l'url de destination
-      axios.post("http://localhost:5000/articles", {
+      axios.post("http://localhost:3004/articles", {
         author: author,
         content: content,
         date: Date.now(),

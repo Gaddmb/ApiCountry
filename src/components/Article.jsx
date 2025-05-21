@@ -29,14 +29,14 @@ const Article = ({ article }) => {
     };
 
     // si il souhaite faire un update prend le lien suivant et envoie les données de mon objet data puis une fois que cela et fait je fais un then pour changer l'etat de mon isEditing
-    axios.put("http://localhost:5000/articles/" + article.id, data).then(() => {
+    axios.put("http://localhost:3004/articles/" + article.id, data).then(() => {
       setIsEditing(false);
     });
   };
 
   const handleDelete = () => {
     // je fais une requete delete pour supprimer un article
-    axios.delete("http://localhost:5000/articles/" + article.id);
+    axios.delete("http://localhost:3004/articles/" + article.id);
     // je rafraichis la page pour voir que l'article a bien été supprimé
     window.location.reload();
   };

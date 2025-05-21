@@ -1,6 +1,6 @@
 import React from "react";
 // me permet de creer des liens dans l'application pour naviguer d'une page à une autre
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
