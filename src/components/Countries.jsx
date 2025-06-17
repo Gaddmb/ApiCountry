@@ -16,7 +16,9 @@ const Countries = () => {
   useEffect(() => {
     // remarque axios transforme direct le json en objet javascript , pas besoin de faire un json.parse
     axios
-      .get("https://restcountries.com/v3.1/all")
+      .get(
+        "https://restcountries.com/v3.1/all?fields=name,capital,flags,population,translations,continents"
+      )
       .then((res) => {
         setData(res.data);
         console.log(res.data);

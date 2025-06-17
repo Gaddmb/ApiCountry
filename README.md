@@ -41,6 +41,6 @@ Ce projet est une application React permettant de découvrir des pays via l’AP
 
 ## Auteur
 
-Projet réalisé par [Ton Nom].
+Projet réalisé par Mbengi Gaddiel.
 
 ---

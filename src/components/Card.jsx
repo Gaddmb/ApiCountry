@@ -1,5 +1,3 @@
-import React from "react";
-
 // card est le composant enfant de Countries, il recoit les données de Countries en tant que props
 const Card = ({ country }) => {
   return (
